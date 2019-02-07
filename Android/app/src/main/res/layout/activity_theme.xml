@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blur_white"
+    android:padding="15dip">
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Please select the theme according to the color blindness detected."
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="10dip"
+        android:drawableLeft="@drawable/info_2"
+        android:drawablePadding="15dip"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/duetranope"
+            android:text="Duetranope (Green)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dip"
+            android:layout_margin="5dip"/>
+
+        <Button
+            android:id="@+id/protanope"
+            android:text="Protanope (Red)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffbb33"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dip"
+            android:layout_margin="5dip"/>
+
+        <Button
+            android:id="@+id/tirtanope"
+            android:text="Tirtanope (Blue)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffb0c4de"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dip"
+            android:layout_margin="5dip"/>
+
+        <Button
+            android:id="@+id/duetranomaly"
+            android:text="Duetranomaly (Red and Green)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dip"
+            android:layout_margin="5dip"/>
+
+        <Button
+            android:id="@+id/normal"
+            android:text="No color blindness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dip"
+            android:layout_margin="5dip"/>
+
+    </LinearLayout>
+
+</LinearLayout>

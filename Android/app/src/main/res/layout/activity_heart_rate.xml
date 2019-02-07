@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.csulb.wecare.HeartRateActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="30dip">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp">
+          <!--      android:background="@drawable/heart_rate_calculator">
+                -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dip">
+
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:id="@+id/heartRateProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        custom:circle_max="198"
+                        custom:circle_unfinished_color="@color/lightGray"
+                        custom:circle_finished_color="@android:color/holo_red_light"
+                        custom:circle_text_size="56sp"
+                        custom:circle_suffix_text=""/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="15dip"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/heartRateMeasureButton"
+                android:layout_gravity="top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Measure"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <TextView
+            android:padding="15dip"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            android:text="** This is your approximate heart rate."/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.csulb.wecare.EmergencyActivity"
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/emergencyButton"
+        android:layout_width="250dip"
+        android:layout_height="250dip"
+        android:layout_margin="50dip"
+        android:padding="30dip"
+        android:background="@drawable/emergency_button_bg"
+        android:text="Emergency"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

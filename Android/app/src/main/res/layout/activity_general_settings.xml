@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppThemeActionBar"
+    tools:context="com.example.csulb.wecare.GeneralSettingsActivity"
+    android:fadeScrollbars="false">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:layout_margin="5dip"
+        android:padding="5dip">
+
+        <LinearLayout
+            android:id="@+id/generalAgeLinearLayout"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_marginRight="5dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="How old are you?"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/ageRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dip">
+
+                <RadioButton
+                    android:id="@+id/ltFiftyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="@string/_50"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/fiftySixtyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="51 - 60"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/sixtySeventyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="61 - 70"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/gtSeventyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="@string/_70"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/generalGenderLinearLayout"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="What is your gender?"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dip">
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="Male"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="Female"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/otherRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="Other"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/generalDiseaseLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical"
+            android:padding="15dip">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="15dip"
+                android:text="Do you have any medical conditions?"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/arthritisCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="5dip"
+                android:text="Arthritis"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cholestrolCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="5dip"
+                android:text="Cholestrol"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/diabetesCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="5dip"
+                android:text="@string/diabetes"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/heartCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="5dip"
+                android:text="@string/heart_disease"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/hypertensionCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="5dip"
+                android:text="@string/hypertension"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/obesityCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="5dip"
+                android:text="@string/obesity"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/osteoporosisCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="5dip"
+                android:text="@string/osteoporosis"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/noneCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="5dip"
+                android:text="@string/none"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/generalBodyLinearLayout"
+            android:layout_marginRight="5dip"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dip"
+                android:text="@string/identify_you_body_type"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/bodyRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip">
+
+                <RadioButton
+                    android:id="@+id/superFitRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:padding="5dip"
+                    android:text="@string/super_fit"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/fitRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:padding="5dip"
+                    android:text="Fit"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/balancedRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:padding="5dip"
+                    android:text="@string/balanced"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/midLowerRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:padding="5dip"
+                    android:text="@string/mid_lower"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/obeseRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:padding="5dip"
+                    android:text="@string/obese"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/generalLanguageLinearLayout"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dip"
+                android:text="Preferred voice"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/languageRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip">
+
+                <RadioButton
+                    android:id="@+id/englishRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:padding="5dip"
+                    android:text="English"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/spanishRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:padding="5dip"
+                    android:text="Spanish"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/generalResetButton"
+            android:layout_margin="5dip"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:background="@android:color/white"
+            android:text="Reset"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="15dip"
+            android:textColor="@android:color/black"/>
+        <Button
+            android:id="@+id/generalSaveButton"
+            android:layout_margin="5dip"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:background="@drawable/login_signup_bg_square"
+            android:text="@string/save_settings"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="15dip"
+            android:textColor="@android:color/white"/>
+
+
+    </GridLayout>
+</ScrollView>

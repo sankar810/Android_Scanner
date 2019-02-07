@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="backgroundColor" format="color"/>
+    <!-- Normal color-->
+    <attr name="NormalColor1" format="color"/>
+    <attr name="NormalColor2" format="color"/>
+    <attr name="NormalColor3" format="color"/>
+    <attr name="NormalColor4" format="color"/>
+    <attr name="NormalColor5" format="color"/>
+
+    <!-- Duetranope colors -->
+    <attr name="DuetranopeColor1" format="color"/>
+    <attr name="DuetranopeColor2" format="color"/>
+    <attr name="DuetranopeColor3" format="color"/>
+    <attr name="DuetranopeColor4" format="color"/>
+    <attr name="DuetranopeColor5" format="color"/>
+
+    <!-- Protanope colors -->
+    <attr name="ProtanopeColor1" format="color"/>
+    <attr name="ProtanopeColor2" format="color"/>
+    <attr name="ProtanopeColor3" format="color"/>
+    <attr name="ProtanopeColor4" format="color"/>
+    <attr name="ProtanopeColor5" format="color"/>
+
+    <!-- Tirtanope colors -->
+    <attr name="TirtanopeColor1" format="color"/>
+    <attr name="TirtanopeColor2" format="color"/>
+    <attr name="TirtanopeColor3" format="color"/>
+    <attr name="TirtanopeColor4" format="color"/>
+    <attr name="TirtanopeColor5" format="color"/>
+</resources>

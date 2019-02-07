@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:theme="@style/AppTheme"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#99EDEDED">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:padding="10dip">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/settingsProfilePhoto"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@android:color/black"/>/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/settingsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="10dip"
+                android:layout_marginBottom="10dip"
+                android:textColorHint="@color/lightGray"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/lightGray"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="10dip"/>
+
+            <TextView
+                android:id="@+id/settingsGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="10dip"
+                android:layout_marginBottom="10dip"
+                android:drawableStart="@drawable/medical_bag"
+                android:drawablePadding="10dip"
+                android:clickable="true"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/lightGray"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="10dip"/>
+
+
+            <TextView
+                android:id="@+id/settingsIshihara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take Color Blindness Test"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="10dip"
+                android:clickable="true"
+                android:drawableStart="@drawable/visibility"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/lightGray"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="10dip"/>
+
+
+            <TextView
+                android:id="@+id/settingsTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Theme"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="10dip"
+                android:clickable="true"
+                android:drawableStart="@drawable/accessibility"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/lightGray"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="10dip"/>
+
+
+            <TextView
+                android:id="@+id/settingsLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="10dip"
+                android:clickable="true"
+                android:drawableStart="@drawable/exit"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

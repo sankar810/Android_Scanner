@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.csulb.wecare.EmergencyActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/emergencyCallFlash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dip"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+        <Button
+            android:id="@+id/emergencyCancelButton"
+            android:layout_margin="30dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:padding="30dip"
+            android:textColor="@android:color/white"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+</RelativeLayout>

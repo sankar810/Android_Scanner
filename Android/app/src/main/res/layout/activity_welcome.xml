@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.csulb.wecare.WelcomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/welcomeViewPager"/>
+    </LinearLayout>
+<!--
+        <LinearLayout
+            android:id="@+id/welcomeDotsLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dip"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:alpha="0.5"
+            android:layout_above="@id/welcomeDotsLinearLayout"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/welcomeNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="Next"
+            android:textColor="@android:color/white"/>
+
+
+        <Button
+            android:id="@+id/welcomeBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:text="Back"
+            android:textColor="@android:color/white"/>
+ -->
+</RelativeLayout>

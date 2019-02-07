@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:paddingTop="35dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip">
+
+            <com.facebook.login.widget.LoginButton
+                xmlns:facebook="http://schemas.android.com/apk/res-auto"
+                facebook:com_facebook_login_text="Facebook"
+                android:layout_weight="1"
+                android:id="@+id/loginFacebookButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/FacebookLoginButton"
+                android:elevation="2dp" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="50dip"
+                android:background="@color/lightGray"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dip"/>
+
+            <com.google.android.gms.common.SignInButton
+                android:layout_weight="1"
+                android:id="@+id/loginGoogleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GoogleSignInButton"
+                android:background="@android:color/transparent"
+                android:elevation="2dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dip"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/loginEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg1"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="10dip"
+                android:hint="@string/loginEmail"
+                android:gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                android:layout_margin="5dip"
+                android:padding="10dip"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/lightGray"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/loginPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg1"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="10dip"
+                android:hint="@string/loginPassword"
+                android:layout_margin="5dip"
+                android:gravity="center_vertical"
+                android:inputType="numberPassword"
+                android:padding="10dip"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/lightGray"
+                android:textSize="16sp"
+                android:imeOptions="actionDone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dip">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_bg"
+                android:padding="10dip"
+                android:text="@string/loginButton"
+                android:textColor="#f16f7d"
+                android:textSize="16sp"
+                android:layout_margin="5dip"
+                android:textStyle="bold"
+                android:elevation="2dip"/>
+
+            <Button
+                android:id="@+id/loginSignUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_signup_bg"
+                android:padding="10dip"
+                android:text="@string/loginSignUpButton"
+                android:layout_margin="5dip"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:elevation="2dip"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/loginForgotTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightGray"
+            android:textSize="15sp"
+            android:text="@string/forgotLogin"
+            android:gravity="center"
+            android:clickable="true"
+            android:padding="10dip"
+            android:layout_margin="10dip"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:background="@color/blur_white"
+        android:padding="150dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"  />
+
+</RelativeLayout>

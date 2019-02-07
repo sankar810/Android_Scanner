@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "163148625563",
+    "firebase_url": "https://scanner-cbd3b.firebaseio.com",
+    "project_id": "scanner-cbd3b",
+    "storage_bucket": "scanner-cbd3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163148625563:android:640c45ba0d300356",
+        "android_client_info": {
+          "package_name": "com.sa.arvi.scanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163148625563-rk2e1bg9q0aedsi41osejcf75t5t91e6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsKNxCmzME_uDz4HwPqeWKK97w1P3bZCc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

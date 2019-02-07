@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/holo_green_light</color>
+    <color name="colorPrimaryDark">@android:color/holo_green_dark</color>
+    <color name="colorAccent">@android:color/darker_gray</color>
+    <color name="blur_white">#C3FFFFFF</color>
+    <color name="lightGreen">#FFBAE990</color>
+    <color name="lightGray">#EDEDED</color>
+    <color name="darkestGray">#696969</color>
+    <color name="violet">#EE82EE</color>
+    <color name="indigo">#4B0082</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fadeGray">#99EDEDED</color>
+
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+    <color name="bg_step_progress">#3b839b</color>
+    <color name="bg_step_finished_prog">#4db9ca</color>
+
+
+    <color name="color_preloader_start">#000000</color>
+    <color name="color_preloader_center">#000000</color>
+    <color name="color_preloader_end">#ff56a9c7</color>
+
+
+
+    <array name="active_dot">
+        <item>@android:color/black</item>
+    </array>
+
+    <array name="inactive_dot">
+        <item>@color/lightGray</item>
+    </array>
+
+
+
+    <string-array
+        name="normal">
+        <item>#ff0099cc</item>
+        <item>#ffff8800</item>
+        <item>#ff99cc00</item>
+        <item>#ffffbb33</item>
+        <item>#ffaa66cc</item>
+    </string-array>
+
+    <string-array
+        name="duetranope">
+        <item>#ff0099cc</item>
+        <item>#ffDB7093</item>
+        <item>#ff800000</item>
+        <item>#ffffbb33</item>
+        <item>#ffb0c4de</item>
+    </string-array>
+
+    <string-array
+        name="protanope">
+        <item>#ff0099cc</item>
+        <item>#ffDB7093</item>
+        <item>#ffb0c4de</item>
+        <item>#ffffb6c1</item>
+        <item>#ff4b0082</item>
+    </string-array>
+
+    <string-array
+        name="tirtanope">
+        <item>#ff0099cc</item>
+        <item>#ffc71585</item>
+        <item>#ffb0c4de</item>
+        <item>#ffffc0cb</item>
+        <item>#ffaa66cc</item>
+    </string-array>
+
+    <string-array
+        name="deuteranomly">
+        <item>#ffDCDCDC</item>
+        <item>#ffC0C0C0</item>
+        <item>#ff696969</item>
+        <item>#ff708090</item>
+        <item>#ff000000</item>
+    </string-array>
+</resources>
